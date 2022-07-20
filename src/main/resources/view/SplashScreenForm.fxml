@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="271.0" prefWidth="566.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenFormController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="21.0" layoutY="41.0" style="-fx-image: gray;">
+         <image>
+            <Image url="@../images/fuelstation.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="267.0" layoutX="238.0" layoutY="178.0">
+         <image>
+            <Image url="@../images/governmentLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" layoutY="21.0" text="National Fuel Pass">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutX="251.0" layoutY="130.0" prefHeight="22.0" prefWidth="273.0" text="Welcome to National Fuel Pass App">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="74.0" text="v0.1.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="pgbContainer" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="14.0" layoutX="-3.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" width="630.0" />
+      <Rectangle fx:id="pgbLoad" arcHeight="5.0" arcWidth="5.0" fill="#9fff1f" height="14.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+   </children>
+</AnchorPane>

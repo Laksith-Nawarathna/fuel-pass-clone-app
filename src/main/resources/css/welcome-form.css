@@ -1,0 +1,17 @@
+.btn:hover, .btn:focused {
+    -fx-text-fill: red;
+    -fx-border-color: red !important;
+}
+
+/*
+.btn:focused {
+    -fx-text-fill: red;
+    -fx-border-color: red !important;
+}*/
+
+/*.btn{
+    -fx-font-family: "Ubuntu";
+    -fx-font-weight: bold;
+    -fx-font-size: 21px;
+}*/
+
