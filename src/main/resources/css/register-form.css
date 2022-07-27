@@ -1,0 +1,13 @@
+#btnRegister:hover, #btnRegister:focused{
+    -fx-background-color: red;
+
+}
+
+#lblLoginHere:hover, #lblLoginHere:focused{
+    -fx-text-fill: #73FFDB;
+}
+
+#btnLogin:hover, #btnLogin:focused{
+    -fx-background-color: #73FFDB;
+    -fx-text-fill: bold;
+}

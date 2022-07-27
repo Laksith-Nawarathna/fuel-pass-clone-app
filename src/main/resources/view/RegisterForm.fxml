@@ -1,11 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
+<AnchorPane fx:id="pneRegisterForm" prefHeight="510.0" prefWidth="555.0" stylesheets="@../css/register-form.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
    <children>
-      <Button layoutX="46.0" layoutY="138.0" mnemonicParsing="false" text="Button" />
+      <FlowPane alignment="CENTER_LEFT" layoutX="46.0" layoutY="446.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="9.0">
+         <children>
+            <Button id="btnRegister" fx:id="btnRegister" disable="true" mnemonicParsing="false" onAction="#btnRegisterOnAction" style="-fx-background-color: #03a803;" styleClass="btn" text="Register" textFill="#000000ed">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </FlowPane>
+      <Label alignment="CENTER" layoutX="180.0" layoutY="31.0" text="REGISTRATION" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Z003-MediumItalic" size="34.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="47.0" layoutY="190.0" text="NIC Number*">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <HBox layoutX="46.0" layoutY="281.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="58.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="First Name*">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtFirstName" disable="true" layoutX="-7.0" layoutY="26.0" prefHeight="26.0" prefWidth="197.0" promptText="Ex: Eranga">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Last Name:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtLastName" disable="true" layoutY="26.0" prefHeight="26.0" prefWidth="197.0" promptText="Ex: Bandara">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Label layoutX="50.0" layoutY="353.0" text="Address*">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <FlowPane layoutX="46.0" layoutY="221.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="txtNIC" prefHeight="26.0" prefWidth="197.0" promptText="Ex: 941421296V">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </FlowPane>
+      <TextField fx:id="txtAddress" disable="true" layoutX="46.0" layoutY="388.0" prefHeight="26.0" prefWidth="312.0" promptText="Ex: 2T/1,Station Road, Gampaha">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <FlowPane alignment="CENTER" layoutX="153.0" layoutY="91.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="Already have an account? " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label id="lblLoginHere" alignment="CENTER" onMouseClicked="#lblLoginHereOnMouseClicked" style="-fx-text-fill: purple;" stylesheets="@../css/register-form.css" text="Login Here" textFill="#27d389">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </FlowPane>
+      <Label layoutX="47.0" layoutY="141.0" prefHeight="18.0" prefWidth="119.0" text="Personal Details" textFill="#03a803" />
+      <FlowPane alignment="CENTER" layoutX="52.0" layoutY="136.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a803" height="6.0" layoutX="46.0" layoutY="169.0" stroke="WHITE" strokeType="INSIDE" width="488.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="21.0" />
+      <Label fx:id="lblNICStatus" layoutX="47.0" layoutY="255.0" text="Please enter valid NIC number to proceed" />
    </children>
 </AnchorPane>

@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.LoginFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="115.0" layoutY="193.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="txtNICNumber" prefHeight="37.0" prefWidth="370.0" promptText="Ex: 941421296V" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="115.0" />
+         </children>
+      </AnchorPane>
+      <FlowPane alignment="CENTER" layoutX="245.0" layoutY="51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label text="LOGIN">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" layoutX="153.0" layoutY="116.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label text="Don't have an account? ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRegisterHere" onMouseClicked="#lblRegisterHereOnMouseClicked" text="Register Here" textFill="#2d0e8f">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </FlowPane>
+      <TextFlow layoutX="116.0" layoutY="160.0" prefHeight="22.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NIC Number " />
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+         </children>
+      </TextFlow>
+      <Label fx:id="lblNICNumberStatus" layoutX="116.0" layoutY="244.0" text="NIC number is required" textFill="RED" />
+      <AnchorPane layoutX="115.0" layoutY="293.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button id="btnLogin" fx:id="btnLogin" alignment="CENTER" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="37.0" prefWidth="370.0" stylesheets="@../css/register-form.css" text="LOGIN" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="115.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

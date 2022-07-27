@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import util.Navigation;
+import util.Routes;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,7 +24,7 @@ public class WelcomeFormController {
 
     public void btnLoginOnAction(ActionEvent actionEvent) throws IOException {
 
-        URL resource = this.getClass().getResource("/view/LoginForm.fxml.fxml");
+       /* URL resource = this.getClass().getResource("/view/LoginForm.fxml");
         AnchorPane loginForm = FXMLLoader.load(resource);
 
         AnchorPane pneContainer = (AnchorPane) pneWelcome.getParent();
@@ -32,13 +34,15 @@ public class WelcomeFormController {
         AnchorPane.setLeftAnchor(loginForm,0.0);
         AnchorPane.setRightAnchor(loginForm,0.0);
         AnchorPane.setTopAnchor(loginForm,0.0);
-        AnchorPane.setBottomAnchor(loginForm,0.0);
+        AnchorPane.setBottomAnchor(loginForm,0.0);*/
+
+        Navigation.navigation(Routes.LOGIN);
 
     }
 
     public void btnRegisterOnAction(ActionEvent actionEvent) throws IOException {
 
-        URL resource = this.getClass().getResource("/view/RegisterForm.fxml");
+       /* URL resource = this.getClass().getResource("/view/RegisterForm.fxml");
         AnchorPane registerForm = FXMLLoader.load(resource);
 
         AnchorPane pneContainer = (AnchorPane) pneWelcome.getParent();
@@ -48,7 +52,9 @@ public class WelcomeFormController {
         AnchorPane.setLeftAnchor(registerForm,0.0);
         AnchorPane.setRightAnchor(registerForm,0.0);
         AnchorPane.setTopAnchor(registerForm,0.0);
-        AnchorPane.setBottomAnchor(registerForm,0.0);
+        AnchorPane.setBottomAnchor(registerForm,0.0);*/
+
+        Navigation.navigation(Routes.REGISTRATION);
 
     }
 

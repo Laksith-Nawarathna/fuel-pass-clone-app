@@ -8,9 +8,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import util.Navigation;
 
 import java.io.IOException;
 import java.net.URL;
@@ -52,22 +54,25 @@ public class SplashScreenFormController {
         KeyFrame frame4 = new KeyFrame(Duration.millis(4000), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                pgbLoad.setWidth(pgbContainer.getWidth());
 
-                Stage stage = new Stage();
-                stage.setTitle("National Fuel Pass App");
-                URL resource = this.getClass().getResource("/view/HomeForm.fxml");
                 try {
+                    pgbLoad.setWidth(pgbContainer.getWidth());
+                    Stage stage = new Stage();
+                    stage.setTitle("National Fuel Pass App");
+                    URL resource = this.getClass().getResource("/view/HomeForm.fxml");
                     Parent container = FXMLLoader.load(resource);
+                    AnchorPane pneContainer = (AnchorPane) container.lookup("#pneContainer");
+                    Navigation.init(pneContainer);
                     Scene scene = new Scene(container);
                     stage.setScene(scene);
+                    stage.centerOnScreen();
+                    stage.show();
+                    lblStatus.getScene().getWindow().hide();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
 
-                stage.centerOnScreen();
-                stage.show();
-                lblStatus.getScene().getWindow().hide();
+
             }
         });
 

@@ -5,9 +5,9 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane fx:id="pneAdminLogin" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginFormController">
    <children>
@@ -22,10 +22,14 @@
          </children>
       </VBox>
       <Label alignment="CENTER" layoutY="182.0" text="Enter Admin Password" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-      <ImageView fitHeight="76.0" fitWidth="200.0" layoutX="200.0" layoutY="265.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
-         <image>
-            <Image url="@../images/ictaLogo.jpg" />
-         </image>
-      </ImageView>
+      <FlowPane alignment="CENTER" layoutX="200.0" layoutY="265.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../images/ictaLogo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
    </children>
 </AnchorPane>
