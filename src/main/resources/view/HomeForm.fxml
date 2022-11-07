@@ -5,6 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="626.0" prefWidth="600.0" stylesheets="@../css/home-form.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
    <children>
@@ -35,11 +36,7 @@
                   <Image url="@../images/ceypetcoLogo.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="97.0">
-               <image>
-                  <Image url="@../images/ictaLogo.jpg" />
-               </image>
-            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Designed by: Eranga Bandara" />
             <ImageView fitHeight="49.0" fitWidth="52.0">
                <image>
                   <Image url="@../images/iocLogo.jpg" />

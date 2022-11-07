@@ -13,7 +13,7 @@
 
 <AnchorPane fx:id="pneRegisterForm" prefHeight="510.0" prefWidth="558.0" stylesheets="@../css/register-form.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
    <children>
-      <FlowPane alignment="CENTER_LEFT" layoutX="46.0" layoutY="446.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="9.0">
+      <FlowPane alignment="CENTER_LEFT" layoutX="40.0" layoutY="422.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="9.0">
          <children>
             <Button id="btnRegister" fx:id="btnRegister" disable="true" mnemonicParsing="false" onAction="#btnRegisterOnAction" style="-fx-background-color: #03a803;" styleClass="btn" text="Register" textFill="#000000ed">
                <font>
@@ -30,7 +30,7 @@
             <Font name="Z003-MediumItalic" size="34.0" />
          </font>
       </Label>
-      <HBox alignment="CENTER" layoutY="289.0" spacing="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <HBox alignment="CENTER" layoutY="282.0" spacing="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <AnchorPane prefHeight="58.0" prefWidth="272.0" HBox.hgrow="ALWAYS">
                <children>
@@ -65,7 +65,7 @@
             <Insets left="40.0" />
          </padding>
       </HBox>
-      <HBox layoutY="363.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="0.0">
+      <HBox layoutX="40.0" layoutY="348.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="0.0">
          <children>
             <AnchorPane prefHeight="26.0" prefWidth="312.0" HBox.hgrow="ALWAYS">
                <children>

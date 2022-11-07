@@ -53,12 +53,12 @@ public class AdminLoginFormController {
             Alert alert = new Alert(Alert.AlertType.ERROR, "Invalid Admin Password. You have " + attempts + " more attempts to try again.");
             attempts--;
 
-            InputStream resourceAsStream = this.getClass().getResourceAsStream("/images/ictaLogo.jpg");
-            Image image = new Image(resourceAsStream);
-            ImageView imageView = new ImageView(image);
-            imageView.setFitWidth(48);
-            imageView.setFitHeight(48);
-            alert.setGraphic(imageView);
+//            InputStream resourceAsStream = this.getClass().getResourceAsStream("/images/ictaLogo.jpg");
+//            Image image = new Image(resourceAsStream);
+//            ImageView imageView = new ImageView(image);
+//            imageView.setFitWidth(48);
+//            imageView.setFitHeight(48);
+//            alert.setGraphic(imageView);
 
             alert.setHeaderText("Invalid Login Credential");
             alert.setTitle("Access Denied");
