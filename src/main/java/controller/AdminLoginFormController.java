@@ -36,7 +36,10 @@ public class AdminLoginFormController {
         if (!txtPassword.getText().equals(ADMIN_PASSWORD)){
 
             if (attempts == 0){
-                new Alert(Alert.AlertType.ERROR, "Sorry, You have reached maximum number of attempts").showAndWait();
+                Alert alert = new Alert(Alert.AlertType.ERROR, "Sorry, You have reached maximum number of attempts");
+                alert.getDialogPane().setMinWidth(400);
+                alert.getDialogPane().setMinHeight(170);
+                alert.showAndWait();
                 Platform.exit();
                 return;
             }
@@ -59,10 +62,13 @@ public class AdminLoginFormController {
 
             alert.setHeaderText("Invalid Login Credential");
             alert.setTitle("Access Denied");
-
+            alert.getDialogPane().setMinWidth(450);
+            alert.getDialogPane().setMinHeight(170);
             alert.showAndWait();
+
             mediaPlayer.dispose();
             txtPassword.requestFocus();
+            txtPassword.selectAll();
             return;
         }
 

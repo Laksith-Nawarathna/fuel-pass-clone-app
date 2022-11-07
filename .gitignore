@@ -1,4 +1,5 @@
 .idea/
+shade/
 target/
 
 *.iml

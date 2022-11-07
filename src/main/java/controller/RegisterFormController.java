@@ -112,7 +112,7 @@ public class RegisterFormController {
             return;
         } else{
             User user = new User(txtNIC.getText(), txtFirstName.getText(),
-                    txtLastName.getText(), txtAddress.getText());
+                    txtLastName.getText(), txtAddress.getText(), 16);
             boolean result = InMemoryDB.registerUser(user);
 
             if(result){

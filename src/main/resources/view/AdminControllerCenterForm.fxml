@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="pneAdminControlCenter" focusTraversable="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminControllerCenterFormController">
+<AnchorPane fx:id="pneAdminControlCenter" focusTraversable="true" prefHeight="442.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminControllerCenterFormController">
    <children>
-      <Button layoutX="221.0" layoutY="174.0" mnemonicParsing="false" text="OK" />
+      <Button fx:id="btnUpdate" layoutX="207.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="UPDATE QUOTA" />
+      <Label layoutX="233.0" layoutY="11.0" text="Control Center">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblUser" layoutX="21.0" layoutY="159.0" prefHeight="200.0" prefWidth="568.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="NIC" />
+            <TableColumn prefWidth="95.0" text="Quota" />
+          <TableColumn prefWidth="104.0" text="First Name" />
+            <TableColumn prefWidth="101.0" text="Last Name" />
+            <TableColumn fx:id="colAddress" prefWidth="192.0" text="Address" />
+        </columns>
+      </TableView>
+      <Spinner fx:id="txtQuota" editable="true" layoutX="21.0" layoutY="389.0" />
+      <FlowPane alignment="CENTER" hgap="20.0" layoutX="21.0" layoutY="95.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="txtSearch" prefHeight="26.0" prefWidth="492.0" promptText="EX: 123456789V, Kalmala, Panadura" />
+            <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#btnSearchOnAction" text="SEARCH" />
+         </children>
+      </FlowPane>
+      <Label layoutX="21.0" layoutY="66.0" text="Search Users by NIC, Name or Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRemoveUser" layoutX="463.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnRemoveUserOnAction" text="REMOVE USER" />
    </children>
 </AnchorPane>

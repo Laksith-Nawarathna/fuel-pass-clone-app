@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.UserDashboardFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="pneDashboard" prefHeight="561.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserDashboardFormController">
+   <children>
+      <FlowPane alignment="CENTER" layoutX="14.0" layoutY="181.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0">
+         <children>
+            <ImageView fx:id="imgQr" fitHeight="200.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../images/QR.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="200.0" prefWidth="295.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="286.0" text="Name :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblName" prefHeight="18.0" prefWidth="165.0" text="Eranga Bandara" />
+                  <Label prefHeight="20.0" prefWidth="286.0" text="NIC :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNIC" prefHeight="18.0" prefWidth="165.0" text="941421296V" />
+                  <Label prefHeight="20.0" prefWidth="286.0" text="Address :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAddress" prefHeight="18.0" prefWidth="165.0" text="Gampaha" />
+                  <Label prefHeight="20.0" prefWidth="286.0" text="Quota :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblQuota" prefHeight="18.0" prefWidth="165.0" text="16L" />
+               </children>
+            </VBox>
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" layoutY="112.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="lblLogout" alignment="CENTER" onMouseClicked="#lblLogoutOnMouseClicked" text="Log out" textFill="#6b0986">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </FlowPane>
+      <Button fx:id="btnDownload" layoutX="84.0" layoutY="417.0" mnemonicParsing="false" onAction="#btnDownloadOnAction" prefHeight="30.0" prefWidth="140.0" text="DOWNLOAD" />
+      <Button fx:id="btnPrint" layoutX="84.0" layoutY="459.0" mnemonicParsing="false" onAction="#btnPrintOnAction" prefHeight="30.0" prefWidth="140.0" text="PRINT" />
+   </children>
 </AnchorPane>

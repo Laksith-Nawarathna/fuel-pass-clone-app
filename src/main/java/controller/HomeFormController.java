@@ -1,5 +1,6 @@
 package controller;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -21,7 +22,13 @@ public class HomeFormController {
 
     public void initialize() throws IOException {
 
-        Navigation.navigation(Routes.LOGIN);
+        Platform.runLater(() -> {
+            try {
+                Navigation.navigation(Routes.WELCOME);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
         /*URL resource = this.getClass().getResource("/view/WelcomeForm.fxml");
         AnchorPane welcomeForm = FXMLLoader.load(resource);
         pneContainer.getChildren().add(welcomeForm);

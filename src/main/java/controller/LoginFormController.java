@@ -1,5 +1,6 @@
 package controller;
 
+import com.google.zxing.WriterException;
 import db.InMemoryDB;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
@@ -24,7 +25,7 @@ public class LoginFormController {
 
     }
 
-    public void btnLoginOnAction(ActionEvent actionEvent) throws IOException {
+    public void btnLoginOnAction(ActionEvent actionEvent) throws IOException, WriterException {
 
         String nic = txtNICNumber.getText();
         if(!RegisterFormController.isValidNIC(txtNICNumber.getText()) ||
@@ -32,7 +33,8 @@ public class LoginFormController {
             new Alert(Alert.AlertType.ERROR,"Please enter a valid NIC").showAndWait();
             txtNICNumber.requestFocus();
         }else{
-            Navigation.navigation(Routes.DASHBOARD);
+            UserDashboardFormController ctrl = (UserDashboardFormController) Navigation.navigation(Routes.DASHBOARD);
+            ctrl.setData(txtNICNumber.getText());
         }
     }
 }

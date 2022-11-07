@@ -6,16 +6,18 @@ public class User implements Serializable {
     private String nic;
     private String firstName;
     private String lastName;
-    private String adrress;
+    private String address;
+    private int quota;
 
     public User() {
     }
 
-    public User(String nic, String firstName, String lastName, String adrress) {
+    public User(String nic, String firstName, String lastName, String address, int quota) {
         this.nic = nic;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.adrress = adrress;
+        this.address = address;
+        this.quota = quota;
     }
 
     public String getNic() {
@@ -42,11 +44,19 @@ public class User implements Serializable {
         this.lastName = lastName;
     }
 
-    public String getAdrress() {
-        return adrress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdrress(String adrress) {
-        this.adrress = adrress;
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public int getQuota() {
+        return quota;
+    }
+
+    public void setQuota(int quota) {
+        this.quota = quota;
     }
 }
