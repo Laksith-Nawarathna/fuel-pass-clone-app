@@ -42,9 +42,9 @@ public class Navigation {
         Parent container = fxmlLoader.load();
         pneContainer.getChildren().add(container);
         AnchorPane.setBottomAnchor(container,0.0);
-        AnchorPane.setBottomAnchor(container,0.0);
-        AnchorPane.setBottomAnchor(container,0.0);
-        AnchorPane.setBottomAnchor(container,0.0);
+        AnchorPane.setTopAnchor(container,0.0);
+        AnchorPane.setLeftAnchor(container,0.0);
+        AnchorPane.setRightAnchor(container,0.0);
         return fxmlLoader.getController();
     }
 

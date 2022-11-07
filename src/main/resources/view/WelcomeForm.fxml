@@ -7,15 +7,14 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="pneWelcome" prefHeight="319.0" prefWidth="600.0" stylesheets="@../css/welcome-form.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WelcomeFormController">
    <children>
-      <Label alignment="CENTER" text="NATIONAL FUEL PASS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="37.0" text="NATIONAL FUEL PASS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="System Bold" size="34.0" />
          </font>
       </Label>
-      <FlowPane alignment="CENTER" hgap="20.0" layoutY="88.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <FlowPane alignment="CENTER" hgap="20.0" layoutY="119.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="90.0" prefWidth="118.0" style="-fx-background-color: white; -fx-border-color: light gray; -fx-background-radius: 20px; -fx-border-radius: 10px;" styleClass="btn" stylesheets="@../css/home-form.css" text="Register">
                <font>

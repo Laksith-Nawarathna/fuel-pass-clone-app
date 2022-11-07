@@ -18,7 +18,7 @@ import java.net.URL;
 
 public class HomeFormController {
     public AnchorPane pneContainer;
-    public AnchorPane pneLogin;
+    public AnchorPane imgLogin;
 
     public void initialize() throws IOException {
 
@@ -54,7 +54,7 @@ public class HomeFormController {
         initialize();
     }
 
-    public void pneLoginOnMouseClicked(MouseEvent mouseEvent) throws IOException {
+    public void imgLoginOnMouseClicked(MouseEvent mouseEvent) throws IOException {
         /*pneContainer.getChildren().clear();
         URL resource = this.getClass().getResource("/view/AdminLoginForm.fxml");
         AnchorPane adminLoginForm = FXMLLoader.load(resource);
@@ -71,7 +71,7 @@ public class HomeFormController {
 
         //System.out.println(keyEvent);
         if(keyEvent.getCode() == KeyCode.ENTER || keyEvent.getCode() == KeyCode.SPACE){
-            pneLoginOnMouseClicked(null);
+            imgLoginOnMouseClicked(null);
         }
 
     }

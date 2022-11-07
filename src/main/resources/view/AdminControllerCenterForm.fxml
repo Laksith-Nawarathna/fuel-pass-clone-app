@@ -7,15 +7,21 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="pneAdminControlCenter" focusTraversable="true" prefHeight="442.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminControllerCenterFormController">
    <children>
-      <Button fx:id="btnUpdate" layoutX="207.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="UPDATE QUOTA" />
-      <Label layoutX="233.0" layoutY="11.0" text="Control Center">
+      <HBox layoutX="21.0" layoutY="389.0" spacing="20.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Spinner fx:id="txtQuota" editable="true" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="UPDATE QUOTA" />
+            <Button fx:id="btnRemoveUser" mnemonicParsing="false" onAction="#btnRemoveUserOnAction" text="REMOVE USER" />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="233.0" layoutY="11.0" text="Control Center" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
-            <Font size="21.0" />
+            <Font name="System Bold" size="35.0" />
          </font>
       </Label>
       <TableView fx:id="tblUser" layoutX="21.0" layoutY="159.0" prefHeight="200.0" prefWidth="568.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
@@ -27,18 +33,20 @@
             <TableColumn fx:id="colAddress" prefWidth="192.0" text="Address" />
         </columns>
       </TableView>
-      <Spinner fx:id="txtQuota" editable="true" layoutX="21.0" layoutY="389.0" />
-      <FlowPane alignment="CENTER" hgap="20.0" layoutX="21.0" layoutY="95.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <HBox layoutY="95.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <TextField fx:id="txtSearch" prefHeight="26.0" prefWidth="492.0" promptText="EX: 123456789V, Kalmala, Panadura" />
-            <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#btnSearchOnAction" text="SEARCH" />
+            <AnchorPane>
+               <children>
+                  <TextField fx:id="txtSearch" prefHeight="26.0" prefWidth="480.0" promptText="EX: 123456789V, Kalmala, Panadura" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="79.0" />
+                  <Button fx:id="btnSearch" layoutX="492.0" mnemonicParsing="false" onAction="#btnSearchOnAction" text="SEARCH" />
+               </children>
+            </AnchorPane>
          </children>
-      </FlowPane>
-      <Label layoutX="21.0" layoutY="66.0" text="Search Users by NIC, Name or Address">
+      </HBox>
+      <Label layoutX="21.0" layoutY="66.0" text="Search Users by NIC, Name or Address" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Button fx:id="btnRemoveUser" layoutX="463.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnRemoveUserOnAction" text="REMOVE USER" />
    </children>
 </AnchorPane>

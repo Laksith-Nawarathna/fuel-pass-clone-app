@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
 
-<AnchorPane prefHeight="615.0" prefWidth="600.0" stylesheets="@../css/home-form.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+<AnchorPane prefHeight="626.0" prefWidth="600.0" stylesheets="@../css/home-form.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
    <children>
-      <FlowPane alignment="CENTER" hgap="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="250.0" prefHeight="102.0" prefWidth="600.0" prefWrapLength="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <ImageView fitHeight="68.0" fitWidth="242.0" onMouseClicked="#imgLogoOnMouseClicked">
                <image>
@@ -18,25 +18,17 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <AnchorPane id="imgContainer" focusTraversable="true">
-               <children>
-                  <AnchorPane id="imgContainer" fx:id="pneLogin" onKeyReleased="#pneLoginOnKeyReleased" onMouseClicked="#pneLoginOnMouseClicked">
-                     <children>
-                        <ImageView fitHeight="78.0" fitWidth="81.0">
-                           <image>
-                              <Image url="@../images/registration.png" />
-                           </image>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
+            <ImageView fitHeight="78.0" fitWidth="81.0" onMouseClicked="#imgLoginOnMouseClicked">
+               <image>
+                  <Image url="@../images/registration.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
          </children>
       </FlowPane>
-      <FlowPane alignment="CENTER" hgap="30.0" layoutY="448.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <FlowPane alignment="CENTER" hgap="30.0" layoutY="574.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <ImageView fitHeight="49.0" fitWidth="52.0">
                <image>
@@ -55,6 +47,6 @@
             </ImageView>
          </children>
       </FlowPane>
-      <AnchorPane fx:id="pneContainer" layoutY="103.0" prefHeight="449.0" prefWidth="600.0" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <AnchorPane fx:id="pneContainer" layoutY="103.0" prefHeight="453.0" prefWidth="600.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
    </children>
 </AnchorPane>

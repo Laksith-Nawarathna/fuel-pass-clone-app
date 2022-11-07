@@ -34,7 +34,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Rectangle fx:id="pgbContainer" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="14.0" layoutX="-3.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" width="630.0" />
-      <Rectangle fx:id="pgbLoad" arcHeight="5.0" arcWidth="5.0" fill="#9fff1f" height="14.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="pgbContainer" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="14.0" layoutX="-3.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="630.0" />
+      <Rectangle fx:id="pgbLoad" arcHeight="5.0" arcWidth="5.0" fill="#9fff1f" height="14.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="42.0" />
    </children>
 </AnchorPane>

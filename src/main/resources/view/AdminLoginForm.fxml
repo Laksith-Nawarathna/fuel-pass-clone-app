@@ -13,7 +13,7 @@
    <children>
       <Label alignment="CENTER" layoutY="106.0" text="Admin Login Form" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
-            <Font name="System Bold" size="30.0" />
+            <Font name="System Bold" size="35.0" />
          </font>
       </Label>
       <VBox layoutX="200.0" layoutY="222.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
