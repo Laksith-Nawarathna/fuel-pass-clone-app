@@ -58,7 +58,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![product-screenshot](/img/product-screenshot.png)
+![product-screenshot](/src/main/resources/images/img/splash-screen.png)
 
 Sri Lanka Ministry of Power and Energy launched the [National Fuel Pass App](https://fuelpass.gov.lk/) to provide the public a convenient and easily accessible solution to obtain fuel and facilitate an allocation-based fuel distribution method.
 I created a clone version of this National Fuel Pass app to improve  my Java and JavaFX skills.
@@ -105,12 +105,12 @@ _Follow the instructions below on setting up the Fuel Pass App Clone project._
    git clone https://github.com/Eranga-Bandara/fuel-pass-clone-app.git
    ```
 2. Open a terminal from the cloned project location. 
-Then run following command to build an executable jar file.
+Then run the following command to create an executable jar file.
 
    ```sh
    mvn clean package
    ```
-3. Then locate the fuel-pass-app-clone.jar file and use the following command to run the file.
+3. Then locate the fuel-pass-app-clone.jar file and use the following command to execute the file.
 
    ```sh
    java -jar fuel-pass-app-clone.jar
@@ -125,45 +125,44 @@ Then run following command to build an executable jar file.
 <!-- USAGE -->
 ## Usage
 
-The app starts with the following splash screen.
+The application starts with the following splash screen.
 
 ![splash-screen](/src/main/resources/images/img/splash-screen.png)
 
-After open up the app you will see the welcome window. It contains two main buttons for registration and login.
-Before login to the app, you have to register. 
+After opening the application you will see the welcome window. It contains two main buttons for registration and login.
+Before accessing the application, you must register.
 ![welcome-window](/src/main/resources/images/img/welcome-page.png)
 
-Following registration window will pop up whenyou hit the register button.
+When you click the register button the following registration window will pop up.
 
 ![registration-window](/src/main/resources/images/img/registration-page.png)
 
-Here you need to provide valid NIC number, first name, last name and address to register with the app.
-After successfully completing these field you will be redirected to the following login window.
+Here you need to provide valid National Identity Card Number, First Name, Last Name and Address to register with the application.
+After successfully completing these fields you will be redirected to the login window below.
 
 ![login-window](/src/main/resources/images/img/login-page.png)
 
-Now you can enter the NIC number you gave for registration to login to the app.
-
-![admin-login-window](/src/main/resources/images/img/admin-login-page.png)
-
-If you successfully logedin you will be able to see your profile information and the fuel quota assigned to you.
+Now you can enter the National ID number provided for registration to log into the app.
+If you have successfully logged in, you will be able to see your profile information and your assigned fuel quota in the user dashboard.
+The user dashboard provides options to download and print the generated QR code for you. This QR code contains your National ID number and name.
 
 ![user-dashboard](/src/main/resources/images/img/user-dashboard.png)
 
-In the user dashboard you can download and print the QR code generated for you. This QR code contains your NIC and name.
+By clicking on the top right icon you can open the admin login window below. (Admin Password: 123)
 
-By clicking top right icon you can open the following admin login window. (admin password: 123)
+![admin-login-window](/src/main/resources/images/img/admin-login-page.png)
+
+In the Admin Control Center you can view all currently registered users.
+The search field can be used to search for specific users and you can update the fuel quota by selecting a row in the table.
+
 ![admin-control-center](/src/main/resources/images/img/admin-control-center.png)
-
-In admin control center you can view all the currently registered users. 
-Search field can be used to search specific users and by selecting a row in the table you can update the fuel quota.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
-Copyright &copy;2022 DEP9. All Rights Reserved.<br>
+Copyright &copy;2022 Eranga Bandara. All Rights Reserved.<br>
 License under the [MIT License](LICENSE.txt).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
