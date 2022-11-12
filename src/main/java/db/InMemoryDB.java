@@ -6,11 +6,12 @@ public class InMemoryDB {
     private static ArrayList<User> userDatabase = new ArrayList();
 
     static {
-        registerUser(new User("123456789", "Eranga","Bandara","Gampaha",20));
-        registerUser(new User("122356789", "Kamal","Bandara","Gampaha",20));
-        registerUser(new User("124556789", "Nalin","Bandara","Gampaha",20));
-        registerUser(new User("126856789", "Sumana","Bandara","Gampaha",20));
-        registerUser(new User("123458889", "Visura","Bandara","Gampaha",20));
+        registerUser(new User("123456789V", "Eranga","Bandara","Gampaha",20));
+        registerUser(new User("223456789v", "Pubudu","Janith","Horana",10));
+        registerUser(new User("322356789v", "Visura","Weerathunga","UK",16));
+        registerUser(new User("424556789V", "Veranga","Kasun","Colombo",20));
+        registerUser(new User("526856789V", "Rusiru","Gurusinghe","Moratuwa",20));
+        registerUser(new User("623458889v", "Danula","Balasuriya","Kandy",15));
     }
     public static User findUser(String nic) {
         for (User user : userDatabase) {

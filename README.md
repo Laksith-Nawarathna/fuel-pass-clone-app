@@ -5,7 +5,7 @@
 <div align="center">
   <a href="https://github.com/Eranga-Bandara/fuel-pass-clone-app">
   <p align="center">
-  <img src="">
+  <img src="/src/main/resources/images/img/splash-screen.png" alt="product-logo">
 </p>
 
   </a>
@@ -13,7 +13,7 @@
 <h1 align="center">FUEL PASS APP CLONE</h1>
 
   <p align="center">
-    A Java Fx clone application for national fulepass application
+    A Java Fx clone application for national fuel pass application
     <br />
     <a href="https://github.com/Eranga-Bandara/mini-game"><strong>Explore the docs »</strong></a>
     <br />

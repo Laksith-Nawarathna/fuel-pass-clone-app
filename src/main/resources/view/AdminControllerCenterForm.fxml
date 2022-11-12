@@ -26,11 +26,11 @@
       </Label>
       <TableView fx:id="tblUser" layoutX="21.0" layoutY="159.0" prefHeight="200.0" prefWidth="568.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="NIC" />
-            <TableColumn prefWidth="95.0" text="Quota" />
-          <TableColumn prefWidth="104.0" text="First Name" />
-            <TableColumn prefWidth="101.0" text="Last Name" />
-            <TableColumn fx:id="colAddress" prefWidth="192.0" text="Address" />
+          <TableColumn prefWidth="133.0" text="NIC" />
+            <TableColumn prefWidth="72.0" text="Quota" />
+          <TableColumn prefWidth="109.0" text="First Name" />
+            <TableColumn prefWidth="143.0" text="Last Name" />
+            <TableColumn fx:id="colAddress" prefWidth="110.0" text="Address" />
         </columns>
       </TableView>
       <HBox layoutY="95.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0">
