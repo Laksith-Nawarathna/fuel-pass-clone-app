@@ -15,14 +15,13 @@
   <p align="center">
     A Java Fx clone application for national fuel pass application
     <br />
-    <a href="https://github.com/Eranga-Bandara/mini-game"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Eranga-Bandara/fuel-pass-clone-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://eranga-bandara.github.io/mini-game/">View Demo</a>
     ·
-    <a href="https://github.com/Eranga-Bandara/mini-game/issues">Report Bug</a>
+    <a href="https://github.com/Eranga-Bandara/fuel-pass-clone-app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Eranga-Bandara/mini-game/issues">Request Feature</a>
+    <a href="https://github.com/Eranga-Bandara/fuel-pass-clone-app/issues">Request Feature</a>
   </p>
 </div>
 
@@ -57,8 +56,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-![product-screenshot](/src/main/resources/images/img/splash-screen.png)
 
 Sri Lanka Ministry of Power and Energy launched the [National Fuel Pass App](https://fuelpass.gov.lk/) to provide the public a convenient and easily accessible solution to obtain fuel and facilitate an allocation-based fuel distribution method.
 I created a clone version of this National Fuel Pass app to improve  my Java and JavaFX skills.
